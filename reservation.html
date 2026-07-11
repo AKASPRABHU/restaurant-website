@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Spice Garden</title>
+
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Reserve Your Table</h1>
+
+        <form id="reservationForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="tel"
+                   id="phone"
+                   placeholder="Phone Number"
+                   required>
+
+            <input type="number"
+                   id="guests"
+                   placeholder="Number of Guests"
+                   required>
+
+            <input type="date"
+                   id="date"
+                   required>
+
+            <input type="time"
+                   id="time"
+                   required>
+
+            <button type="submit">
+                Book Table
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <h2>Current Reservations</h2>
+
+        <div id="reservationList"></div>
+
+    </div>
+
+    <script src="js/reservation.js"></script>
+
+</body>
+
+</html>

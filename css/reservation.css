@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5e6d3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.container{
+    width:650px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+
+    color:#8B4513;
+
+    margin-bottom:30px;
+}
+
+h2{
+    margin-top:40px;
+
+    margin-bottom:20px;
+
+    color:#8B4513;
+}
+
+form{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input{
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+button{
+    padding:15px;
+
+    border:none;
+
+    background:#8B4513;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#A0522D;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+#message{
+    text-align:center;
+
+    color:green;
+
+    font-weight:bold;
+
+    margin-top:20px;
+}
+
+.booking{
+    background:#fff8f0;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+    border-left:6px solid #8B4513;
+
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.booking h3{
+    color:#8B4513;
+
+    margin-bottom:10px;
+}
+
+.booking p{
+    margin:5px 0;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:36px;
+    }
+
+    input{
+        font-size:16px;
+    }
+
+    button{
+        font-size:16px;
+    }
+
+}

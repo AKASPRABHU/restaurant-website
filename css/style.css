@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fffaf5;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    background:#8B4513;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h1{
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    width:60%;
+    margin-bottom:30px;
+}
+
+/* Book Table Button */
+
+.hero button{
+    padding:15px 30px;
+    border:none;
+    background:#FFD700;
+    color:black;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+
+    transition:all 0.3s ease;
+}
+
+.hero button:hover{
+    background:#FFC107;
+    transform:translateY(-5px) scale(1.08) rotate(-1deg);
+    box-shadow:0 12px 25px rgba(0,0,0,0.35);
+}
+
+/* ================= MENU ================= */
+
+.menu{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.menu h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.menu-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:320px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card h3{
+    margin:20px;
+}
+
+.card p{
+    margin:20px;
+}
+
+.card span{
+    display:block;
+    margin-bottom:20px;
+    color:#8B4513;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ================= RESERVATION ================= */
+
+.reservation{
+    background:#f5e6d3;
+    padding:80px;
+    text-align:center;
+}
+
+.reservation h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.reservation form{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    margin:auto;
+    gap:20px;
+}
+
+.reservation input{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.reservation button{
+    padding:15px;
+    border:none;
+    background:#8B4513;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.reservation button:hover{
+    background:#A0522D;
+    transform:translateY(-3px);
+}
+
+/* ================= EVENTS ================= */
+
+.events{
+    padding:80px;
+    text-align:center;
+}
+
+.events h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.event-card{
+    background:white;
+    width:400px;
+    margin:20px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+    transition:all 0.3s ease;
+}
+
+.event-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    background:#8B4513;
+    color:white;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#8B4513;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width:768px){
+
+    /* NAVBAR */
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    nav h1{
+        font-size:42px;
+        margin-bottom:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+    /* HERO */
+
+    .hero{
+        height:auto;
+        padding:100px 20px;
+    }
+
+    .hero h2{
+        font-size:38px;
+    }
+
+    .hero p{
+        width:100%;
+        font-size:18px;
+    }
+
+    .hero button{
+        padding:12px 25px;
+        font-size:16px;
+    }
+
+    /* MENU */
+
+    .menu{
+        padding:50px 20px;
+    }
+
+    .menu h2{
+        font-size:34px;
+    }
+
+    .menu-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    /* RESERVATION */
+
+    .reservation{
+        padding:50px 20px;
+    }
+
+    .reservation h1,
+    .reservation h2{
+        font-size:40px;
+    }
+
+    .reservation form{
+        width:100%;
+    }
+
+    /* EVENTS */
+
+    .events{
+        padding:50px 20px;
+    }
+
+    .events h2{
+        font-size:40px;
+    }
+
+    .event-card{
+        width:100%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding:15px;
+        font-size:14px;
+    }
+}
