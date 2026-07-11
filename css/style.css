@@ -18,9 +18,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 50px;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    width:100%;
 }
 
 nav h1{
@@ -47,23 +45,19 @@ nav a:hover{
 /* ================= HERO ================= */
 
 .hero{
-    height:85vh;
+    min-height:85vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-
     background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
     url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
 
     background-size:cover;
     background-position:center;
-
     color:white;
     padding:20px;
 }
@@ -79,8 +73,6 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-/* Book Table Button */
-
 .hero button{
     padding:15px 30px;
     border:none;
@@ -90,13 +82,12 @@ nav a:hover{
     border-radius:10px;
     cursor:pointer;
     font-weight:bold;
-
     transition:all 0.3s ease;
 }
 
 .hero button:hover{
     background:#FFC107;
-    transform:translateY(-5px) scale(1.08) rotate(-1deg);
+    transform:translateY(-5px) scale(1.08);
     box-shadow:0 12px 25px rgba(0,0,0,0.35);
 }
 
@@ -125,12 +116,11 @@ nav a:hover{
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 0 15px rgba(0,0,0,0.15);
-
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-12px) scale(1.03);
+    transform:translateY(-10px);
     box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
@@ -138,11 +128,6 @@ nav a:hover{
     width:100%;
     height:220px;
     object-fit:cover;
-    transition:0.3s;
-}
-
-.card:hover img{
-    transform:scale(1.08);
 }
 
 .card h3{
@@ -165,7 +150,7 @@ nav a:hover{
 
 .reservation{
     background:#f5e6d3;
-    padding:80px;
+    padding:80px 20px;
     text-align:center;
 }
 
@@ -178,6 +163,7 @@ nav a:hover{
     display:flex;
     flex-direction:column;
     width:400px;
+    max-width:100%;
     margin:auto;
     gap:20px;
 }
@@ -200,13 +186,12 @@ nav a:hover{
 
 .reservation button:hover{
     background:#A0522D;
-    transform:translateY(-3px);
 }
 
 /* ================= EVENTS ================= */
 
 .events{
-    padding:80px;
+    padding:80px 20px;
     text-align:center;
 }
 
@@ -218,18 +203,16 @@ nav a:hover{
 .event-card{
     background:white;
     width:400px;
+    max-width:100%;
     margin:20px auto;
     padding:30px;
     border-radius:15px;
     box-shadow:0 0 15px rgba(0,0,0,0.15);
-
-    transition:all 0.3s ease;
+    transition:0.3s;
 }
 
 .event-card:hover{
-    transform:translateY(-10px) scale(1.03);
-    background:#8B4513;
-    color:white;
+    transform:translateY(-10px);
     box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
@@ -242,11 +225,9 @@ footer{
     padding:20px;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE ================= */
 
 @media screen and (max-width:768px){
-
-    /* NAVBAR */
 
     nav{
         flex-direction:column;
@@ -255,24 +236,18 @@ footer{
     }
 
     nav h1{
-        font-size:42px;
+        font-size:32px;
         margin-bottom:20px;
     }
 
     nav ul{
         flex-direction:column;
-        gap:12px;
+        gap:15px;
     }
-
-    nav a{
-        font-size:18px;
-    }
-
-    /* HERO */
 
     .hero{
-        height:auto;
-        padding:100px 20px;
+        min-height:70vh;
+        padding:60px 20px;
     }
 
     .hero h2{
@@ -284,19 +259,8 @@ footer{
         font-size:18px;
     }
 
-    .hero button{
-        padding:12px 25px;
-        font-size:16px;
-    }
-
-    /* MENU */
-
     .menu{
         padding:50px 20px;
-    }
-
-    .menu h2{
-        font-size:34px;
     }
 
     .menu-container{
@@ -309,39 +273,12 @@ footer{
         max-width:350px;
     }
 
-    /* RESERVATION */
-
-    .reservation{
-        padding:50px 20px;
-    }
-
-    .reservation h1,
-    .reservation h2{
-        font-size:40px;
-    }
-
-    .reservation form{
-        width:100%;
-    }
-
-    /* EVENTS */
-
-    .events{
-        padding:50px 20px;
-    }
-
+    .reservation h2,
     .events h2{
-        font-size:40px;
+        font-size:34px;
     }
 
     .event-card{
         width:100%;
-    }
-
-    /* FOOTER */
-
-    footer{
-        padding:15px;
-        font-size:14px;
     }
 }
